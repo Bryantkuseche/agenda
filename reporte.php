@@ -6,8 +6,8 @@
 
 <body>
 <?php 
-include ("menu.html");
-include ("conexion.php");
+include ("menu.html"); //Inclusion de archivo de Menu
+include ("conexion.php"); //Inclusion de conexion a la BD
 ?>
 <table width="600" border="1" align = "center">
 <tr>
@@ -22,14 +22,14 @@ include ("conexion.php");
 <th scope="col">CIUDAD</th>
 </tr>
 <?php 
-$sql="select * from usuarios";
+$sql="SELECT * FROM usuarios"; //Sentencia SQL para la consulta
 $result = mysqli_query($link, $sql); //ejecuto la consulta
-while ($ver=mysqli_fetch_array($result))
+while ($ver=mysqli_fetch_array($result)) //mysqli_fetch_array() devuelve un arreglo con las variables de
 
 { ?>
 
 <tr>
-<td><?php print $ver [0]; ?></td>
+<td><?php print $ver [0]; ?></td> <!-- Mostrando valores de del arreglo -->
 <td><?php print $ver [1]; ?></td>
 <td><?php print $ver [2]; ?></td>
 <td><?php print $ver [3]; ?></td>
