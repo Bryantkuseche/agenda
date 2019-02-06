@@ -21,4 +21,4 @@ if(!mysqli_error()){ //Para verificar si devuelve TRUE o FALSE, por defecto, dev
         alert("Estamos en mantenimiento previo");
        </script>
       <?php } ?>//cierre de ELSE
-      <meta http-equiv="refresh" content="0;URL=insertar.php">
+      <meta http-equiv="refresh" content="0;URL=insertar.php"><!-- con esto refrescamos la pagina -->
